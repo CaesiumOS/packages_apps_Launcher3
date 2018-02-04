@@ -1027,6 +1027,10 @@ public final class Utilities {
                 R.bool.desktop_form_factor);
     }
 
+    public static boolean isWorkspaceEditAllowed(Context context) {
+        return !LauncherPrefs.WORKSPACE_LOCK.get(context);
+    }
+
     /**
      * Returns a partial, loggable stack trace.
      */
